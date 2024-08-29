@@ -1,0 +1,22 @@
+body{
+    background-image: url(./image/kudo.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 200px;
+    background-attachment: fixed;
+    padding: 40px;
+}
+
+h2{
+    background-color: green;
+    opacity: 0.5;
+}
+h3{
+    background-color: yellow;
+    opacity: 0.4;
+}
+p{
+    font-size: 20px;
+    color: rgb(53, 170, 209);
+    font-weight: bold;
+}

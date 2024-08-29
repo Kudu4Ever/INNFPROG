@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice task 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Practice task 2</h2>
+    <h3>debug and correct</h3>
+    <p id="melding"></p>
+    <script>
+        // We have retrieved user information, and stored the name of the user in a variable called user_name
+        const user_name = "Kudo";
+        // We have obtained the birth year of the user and stored it in the variable user_birthyear
+        const user_birthyear = 1983;
+        // We calculate age by taking the year we are in minus the year of birth, and store the answer in a new variable called age
+        const age = 2022 - user_birthyear;
+        // Then we create a text for printing using concatenation
+        const utskrift = "Hello " + user_name + " ("+ age + " year)";
+        document.getElementById("melding").innerHTML = utskrift;
+    </script>
+    
+</body>
+</html>
