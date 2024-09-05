@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Array/Object - Exercise 3</title>
+</head>
+<style>
+    #utskrift{
+        font-size: 18px;
+
+    }
+    body{
+        background-color: rgb(250, 250, 208);
+    }
+</style>
+<body>
+    <p id="utskrift"></p>
+
+    <script>
+        const dyr = ["katt",
+                     "Hund",
+                     "Hest",
+                     "Ku",
+                     "Fugl",
+                     "Kannin",
+                     "Mus",
+                     "Rev",
+                     "Bjørn",
+                     "Ulv"]
+        // Add two animals to the array
+        dyr.push("Løven", "hjort");
+
+        //Sort array alphabetically
+        dyr.sort();
+
+        // Store the number of animals in the array
+        const antallDyr = dyr.length
+
+        const utskrift = document.getElementById("utskrift");
+        utskrift.innerHTML = `Number of animals: ${antallDyr}. ${dyr.join(', ')}`;
+    </script>
+    
+</body>
+</html>

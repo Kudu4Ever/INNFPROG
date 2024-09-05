@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array/Object - Exercise 1</title>
+    <p id="utskrift"></p>
+</head>
+<style>
+    #utskrift{
+        font-size: 30px;
+
+    }
+    body{
+        background-color: rgb(250, 250, 208);
+    }
+</style>
+<body>
+    <script>
+        // Overview of animals
+        //Create variable with array:
+        const dyr = ["katt",
+                     "Hund",
+                     "Hest",
+                     "Ku",
+                     "Fugl",
+                     "Kannin",
+                     "Mus",
+                     "Rev",
+                     "Bjørn",
+                     "Ulv"]
+        // Template literal with the animals at index 3 and 7
+        // &#128004 and &#128058; it's Animal Symbols
+        const setning = `Her er det listet opp noen dyr, for eksempel ${dyr[3]} &#128004 og ${dyr[7]}  &#129418; .`
+        // Print the sentence:
+        document.getElementById("utskrift").innerHTML = setning
+    </script>
+    
+</body>
+</html>

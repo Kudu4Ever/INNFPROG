@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Array/Object - Exercise 2</title>
+</head>
+<style>
+    #setning{
+        font-size: 18px;
+
+    }
+    body{
+        background-color: rgb(250, 250, 208);
+    }
+</style>
+<body>
+    <p id="setning"></p>
+    <script>
+        /*
+        Create a file called animals.html. Copy in the array animals from the file dyr.html from exercise 1. 
+        Under the variable animals, create a new variable called animals that contains an array with the English 
+        translations of the animals you have stored in animals.
+        
+        Create a variable text where you combine text strings and references to the arrays in animals and animals 
+        to create a sentence ala "X1 is an animal. It is called Y1 in English. X2 is also an animal, which is 
+        called Y2 in English.".
+
+        Replace X1 and X2 with two arbitrary indexes from animals, for example 2 and 8.
+         Replace Y1 and Y2 with values ​​from animals, so that the translations will be correct.
+
+        Print the sentence with translations to a <p> tag with id "sentence".
+        */
+
+
+        //Create variable with array:
+        const dyr = ["katt",
+                     "Hund",
+                     "Hest",
+                     "Ku",
+                     "Fugl",
+                     "Kannin",
+                     "Mus",
+                     "Rev",
+                     "Bjørn",
+                     "Ulv"]
+        ///Create translated array:
+        const animals = ["Cat",
+                     "Dog",
+                     "Horse",
+                     "Cow",
+                     "Bird",
+                     "Rabbit",
+                     "Mouse",
+                     "Fox",
+                     "Bear",
+                     "Wolf"]
+        // Template literal with the animals and translations on index 2 and 8
+        const tekst = `${dyr[2]} &#128014; is an animal.  It is called ${animals[2]} &#128014; in English.
+         ${dyr[8]} &#128059; is also an animal, which is called ${animals[8]} &#128059; in English. `
+         document.getElementById("setning").innerHTML = tekst
+    </script>
+    
+</body>
+</html>
