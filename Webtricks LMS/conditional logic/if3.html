@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Practice task 3 </title>
+</head>
+<style>
+    body{
+        background-color: rgb(242, 242, 192);
+    }
+    #print{
+        font-weight: bold;
+        font-size: 30px;
+    }
+</style>
+<body>
+    <p id="print"></p>
+    <script>
+        // Create three variables called child1, child2 and child3. Give them arbitrary values ​​"boy" or "girl".child
+        const child1 = "Girl"
+        const child2 = "Boy"
+        const child3 = "Boy"
+        let print = ""
+        //Create two new variables called number_of_boys and number_of_girls and give them the value 0.
+        //Prepare variables to count children
+        let number_of_boys = 0
+        let number_of_girls = 0
+
+        if(child1 === "Boy"){
+            number_of_boys += 1;
+        }else{
+            number_of_girls += 1;
+        }
+        if(child2 === "Boy"){
+            number_of_boys += 1
+        }else {
+            number_of_girls += 1
+        }
+        if(child3 === "Boy"){
+            number_of_boys += 1
+        }else {
+            number_of_girls += 1
+        }
+
+        print = `Boys ${number_of_boys} &#128102;, Girls ${number_of_girls} &#128103;` 
+        document.getElementById("print").innerHTML = print;
+    </script>
+    
+</body>
+</html>

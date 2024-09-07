@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Practice task 2 </title>
+</head>
+<style>
+    body{
+        background-color: rgb(246, 246, 208);
+    }
+    #print{
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <!-- prepare a <p> tag for printing -->
+    <p id="print"></p>
+    <script>
+        //Declares a variable with age
+        const age = 38;
+        //Declares a variable to store the text to be printed
+        let print = "";
+        //First condition is if the age is less than 18: store the text "...not of legal age" in the variable print
+         //Other condition is if you are greater than or equal to 18 AND less than or equal to 62: save the text "...of age, ready for studies" in the variable print
+         //For all other conditions (else): save the text "...pension ready" in the variable print
+         
+        if( age < 18){
+            print = "You are not of legal age"  
+        } else if (age >= 18 && age <= 62){
+            print = "You are of age and ready for studies or working life &#128523;"
+        }else{
+            print = "Yoy are pension ready!"
+        }
+        //eventually; write the text stored in the variable print to the <p> tag with id print:
+        document.getElementById("print").innerHTML = print
+
+    </script>
+    
+</body>
+</html>

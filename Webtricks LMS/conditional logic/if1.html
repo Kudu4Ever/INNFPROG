@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Practice task 1</title>
+</head>
+<body>
+    <p id="print"></p>
+    <!-- Prepared a <p> tag with id printing that can be written to via JavaScript -->
+    <script>
+        /*
+        Create a new HTML file called if1.html with standard HTML code ready.
+        Create a variable that contains your name, and declare a variable you call print that you don't fill with any value yet.
+        Then you create an if test that checks the following:
+        if the variable contains exactly your name, fill the variable output with a text string similar to "My name is first name last name".
+        if the variable does NOT contain your name, fill the variable output with a text string similar to "My name is not first name last name".
+        PS: first name is replaced with the value from the first variable - and your last name is written as text.
+        Finally, you print the contents of the print variable to a <p> tag. 
+        Run the code and check if it prints the correct statement. Then try changing the value in the variable with your first name to something 
+        else and run the code to verify that your if/else test works.
+        */
+
+        // Declare a variable called name with the value Sofie as a text string
+
+        const name = "Kudo"
+        // Prepare a variable print that will contain the text we will print
+        let print 
+
+         //Then we do an if test. If the variable name contains the text string "Sofie", this is true.
+         //Then I can print that my name is this.
+         //However, if the name contains anything other than "Sofie" (else), we should print "My name is not NAME Karlsen"
+        if(name === "Kudo"){
+            print = "My name is " + name + " Sofie"
+        }else{
+            print = "My name is not" + name + "Sofie"
+        }
+
+        // When the if test is finished, we can print what is stored in the print variable to the HTML element with id print
+        document.getElementById("print").innerHTML = print
+    </script>
+    
+</body>
+</html>
