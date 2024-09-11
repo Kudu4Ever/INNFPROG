@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Arrays cheat sheet</title>
+</head>
+<style>
+    body{
+        background-image: url(./image/46_Comics_Wallpaper_3840x2160px.jpg);
+        
+        
+    }
+    h2{
+        color: rgb(211, 33, 33);
+    }
+    p{
+        font-weight: bold;
+    }
+    h3{
+        color: rgb(161, 165, 48);
+        font-weight: bold;
+    }
+    #movietitle{
+        color: rgb(56, 204, 204);
+        font-weight: bolder;
+    }
+</style>
+<body>
+    <h2>Arrayer</h2>
+    <p>This cheat sheet works best with the console open</p>
+    <h3>Filmarray (<span id="moviecount">0</span> filmer)</h3>
+    <p>Film on index 10: <span id="movietitle">?</span></p>
+
+    <script>
+        //Create an array of movie titles
+        const movieArray = [
+            "The Matrix",
+            "Lord of the rings",
+            "Titanic",
+            "Desperado",
+            "Once upon a time in Mexico",
+            "Zorro",
+            "Dark Knight",
+            "Batman",
+            "Superman",
+            "Sweet November",
+            "Rocky",
+            "John Wick Chapter 1"
+        ]
+        //To add an element to the end of an array
+        movieArray.push("John Wick Chapter 1")
+        //To delete a movie (with a specific index)
+        movieArray.splice(3,1)
+        //Check for a specific element in the array
+        const movieexists = movieArray.includes("Rocky")
+        console.log("found Batman?" + movieexists)
+        //Sort an array from A-Z
+        movieArray.sort()
+        //Sort from Z-A
+        movieArray.reverse()
+        //Array of numbers
+        const numbersArray = [4, 78, 6, 90, 123, 5, 74]
+        //Sort array of numbers, lowest number first:
+        numbersArray.sort(function(a, b){
+            return a-b})
+            //If we want to sort with the highest number first, let the function return b - a
+
+            //Print the number of movies:
+            document.getElementById("moviecount").innerHTML = movieArray.length
+            //Print film with index 3:
+            const index = 10
+        document.getElementById("movietitle").innerHTML = movieArray[index]
+        //Show moviearray in console:
+        console.log(movieArray)
+        //Show numbersarray in console:
+        console.log(numbersArray)
+    </script>
+
+    
+</body>
+</html>

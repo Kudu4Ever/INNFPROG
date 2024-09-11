@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Variables Cheat Sheet </title>
+</head>
+<style>
+    body{
+        background-image: url(./image/kudo.jpg);
+        background-repeat: no-repeat;
+        background-position: right top;
+        margin-right: 200px;
+        background-attachment: fixed;
+        padding: 40px;
+    }
+    #nameprint{
+        font-size: 25px;
+        color: rgb(222, 78, 78);
+    }
+    #nameprint_temlit{
+        font-size: 25px;
+        color: rgb(159, 164, 23);
+    }
+    #calculation{
+        font-size: 25px;
+        color: rgb(20, 128, 179);
+    }
+</style>
+<body>
+    <p id="nameprint"></p>
+    <p id="nameprint_temlit"></p>
+    <p id="calculation"></p>
+    <script>
+        // Our first javascript comment. And below, our very first variable:
+        const firstName = "Kudo";
+        //Prints firstname to the console
+        console.log(firstName);
+        //Prints firstname to HTML with concatenation
+        document.getElementById("nameprint").innerHTML = "Hello" + firstName;
+        //Prints firstname to HTML with template literal
+        document.getElementById("nameprint_temlit").innerHTML = ` Hello ${firstName}. Are you doing well? `;
+        //Print a simple piece of math
+        document.getElementById("calculation").innerHTML = 10 + 5 ;
+
+    </script>
+</body>
+</html>

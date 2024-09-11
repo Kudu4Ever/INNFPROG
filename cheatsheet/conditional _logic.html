@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conditional Logic</title>
+</head>
+
+<body>
+    
+    <h2>Are you old enough to drive? </h2>
+    <p id="carmessage"></p>
+    <h2>Can the player open the door?</h2>
+    <p id="doormessage">Select door to check</p>
+    <h2>Can I retire?</h2>
+    <p id="retire"></p>
+    <script>
+        const age = 38;
+        const passed = true;
+        // If test to check if we are old enough:
+        if(age >= 18 && passed === true){
+            document.getElementById("carmessage").innerHTML = "Yes"
+        }else {
+            document.getElementById("carmessage").innerHTML = "NO"
+        }
+
+        // We will check if a door is locked, and if the player has a key to unlock it
+        const door1_locked = true;
+        const door2_locked = false;
+        const backPack = "";
+        let doorMsg = document.getElementById("doormessage").innerHTML
+        console.log(doorMsg);
+        if(door2_locked === false) {
+            doorMsg.innerHTML = "Yes"
+        } else {
+            if(backpack === "key") {
+                doormsg.innerHTML = "Yes"
+            } else {
+                doormsg.innerHTML = "No"
+            }
+        }
+        // Check possible retirement age:
+        if(age >= 62 && age < 67) {
+            document.getElementById("retire").innerHTML = "You can retire with AFP."
+        } else if(age >= 67) {
+            document.getElementById("retire").innerHTML = "You can retire with a full pension."
+        } else {
+            document.getElementById("retire").innerHTML = `You can leave AFP if ${62 - age} in a year, and full pension in another ${67 - age} year.`
+        }
+
+
+        
+
+
+    </script>
+    
+</body>
+</html>
